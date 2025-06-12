@@ -6,9 +6,9 @@ import geometry;
 size(250);
 
 // Define triangle vertices
-pair A = (0, 4);      // Top vertex
-pair B = (-3, 0);     // Left base vertex
-pair C = (3, 0);      // Right base vertex
+pair C = (0, 4);      // Top vertex
+pair A = (-3, 0);     // Left base vertex
+pair B = (3, 0);      // Right base vertex
 
 // Draw triangle
 draw(A--B--C--cycle);
@@ -20,17 +20,17 @@ pair P = 0.3*A + 0.3*B + 0.4*C;
 dot("$P$", P, dir(45));
 
 // Mark triangle vertices
-dot("$A$", A, N);
-dot("$B$", B, SW);
-dot("$C$", C, SE);
+dot("$A$", A, SW);
+dot("$B$", B, SE);
+dot("$C$", C, N);
 
 pair X = foot(P,A,B); 
 pair Y = foot(P,B,C);
 pair Z = foot(P,A,C);
 
-label("$c$", midpoint(A--B),NW);
-label("$a$", midpoint(B--C),S); 
-label("$b$", midpoint(A--C),NE); 
+label("$c$", midpoint(A--B),S);
+label("$a$", midpoint(B--C),NE); 
+label("$b$", midpoint(A--C),NW); 
 
 draw(rightanglemark(B,X,P));
 draw(rightanglemark(P,Y,B));
@@ -46,8 +46,8 @@ draw(P--A, blue);
 draw(P--B, blue);
 draw(P--C, blue);
 
-label("$p_c$", midpoint(P--X),SW);
-label("$p_a$", midpoint(P--Y),W);
-label("$p_b$", midpoint(P--Z),NW);
+label("$p_c$", midpoint(P--X),W);
+label("$p_a$", midpoint(P--Y),NW);
+label("$p_b$", midpoint(P--Z),SW);
 
 

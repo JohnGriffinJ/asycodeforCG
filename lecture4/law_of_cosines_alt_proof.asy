@@ -40,11 +40,11 @@ draw(C--X_0, dashed +blue);
 
 
 // Draw angle at A (between vectors AD and AB)
-markangle(B, A, D, radius=15);
+markangle(D, C,B, radius=20);
 
 // Add label alpha near the angle
 
-label("$\alpha$", A + dir(35));
+label("$\alpha$", C + 1.3*dir(215));
 
 // Optional: center
 // dot("$O$", O, S);

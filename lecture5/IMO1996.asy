@@ -41,4 +41,15 @@ draw(B--D, blue+dashed);
 draw(D--F, blue+dashed);
 draw(B--F, blue+dashed);
 
+dot("$B'$", B - (.55,0), SW);
+dot("$F'$", F - (.435,0), NW);
+dot("$E'$", E + (.75,0),NE);
+dot("$C'$", C + (.25,0), SE);
+
+draw(rightanglemark(B,B - (.55,0), A));
+draw(rightanglemark(A,F - (.435,0), F));
+draw(rightanglemark(E, E + (.75,0), D));
+draw(rightanglemark(D, C + (.25,0), C, s=5));
+
+
 

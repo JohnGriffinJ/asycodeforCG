@@ -1,0 +1,26 @@
+   import geometry;
+        import olympiad;
+        size(200);
+        pair A,B,C,D,O;
+        O = (0,0);
+        A = (0,2);
+        C = (0,-2);
+        B = (-2,0); 
+        D = (4,0);
+        draw(A--C);
+        draw(B--D);
+        draw(A--B, blue);
+        draw(B--C, red);
+        draw(C--D, green);
+        draw(D--A, orange); 
+        draw(rightanglemark(A,O,B));
+        draw("$x$", A--O);
+        draw("$y$", B--O);
+        draw("$z$", C--O);
+        draw("$w$", D--O);
+
+        label("$A$", A, NW);
+        label("$B$", B, W);
+        label("$C$", C, SW);
+        label("$D$", D, E);
+        label("$O$", O, NE);

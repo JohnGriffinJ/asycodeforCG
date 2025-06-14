@@ -37,6 +37,13 @@ dot("$D$", D, SE);
 dot("$E$", E, NE);
 dot("$F$", F, NW);
 
+label("$a$", midpoint(A--B), SW);
+label("$b$", midpoint(B--C), S);
+label("$c$", midpoint(C--D), SE); 
+label("$d$", midpoint(D--E), NE); 
+label("$e$", midpoint(E--F), N);
+label("$f$", midpoint(F--A), NW); 
+
 draw(B--D, blue+dashed);
 draw(D--F, blue+dashed);
 draw(B--F, blue+dashed);

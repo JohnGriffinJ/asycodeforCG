@@ -23,7 +23,8 @@ draw(l2);
 triangle t = triangle(A,O,C);
 
 drawline(t);
-point I = incenter(t); dot("$I_1$", I);
+point I = incenter(t); 
+// dot("$I_1$", I);
 real r = inradius(t);
 circle c = circle(I, r); 
 // draw(c);
@@ -43,7 +44,7 @@ line s2 = bisector(line(C,D), line(E,D), sharp = false);
 //draw(s2);
 
 point I2 = intersectionpoint(s2,s1); 
-// dot("$I_2$", I2); 
+dot("$I_2$", I2); 
 
 point AD_foot = foot(I2, A, D); 
 real r2 = length(AD_foot - I2);
@@ -65,6 +66,5 @@ draw(O--X, red+linewidth(1.3));
 draw(X--D, red+linewidth(1.3));
 draw(D--Y, blue+linewidth(1.3)); 
 draw(Y--O, blue+linewidth(1.3)); 
-
 
 

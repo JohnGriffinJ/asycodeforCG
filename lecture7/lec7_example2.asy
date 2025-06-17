@@ -1,4 +1,4 @@
-[asy]
+
 size(300); 
 import olympiad; 
 import geometry; 
@@ -22,4 +22,3 @@ markangle("$\alpha+\beta$", line(P,A), line(P,B));
 
 
 
-[/asy]

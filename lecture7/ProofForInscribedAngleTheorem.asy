@@ -1,4 +1,3 @@
-[asy]
 
 import geometry; 
 import olympiad; 
@@ -36,6 +35,4 @@ draw(O--M1, blue+dotted);
 markangle("$x$", M1,P,O, blue); 
 markangle("$y$", O,M1, P, blue, radius = .75cm);
 markangle("$z$", M1,Q,O,blue); 
-
-
-[/asy]
+markangle("$w$", Q,O,M1,blue, radius = .4cm); 

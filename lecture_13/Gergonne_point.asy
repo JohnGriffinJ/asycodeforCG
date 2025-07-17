@@ -7,7 +7,7 @@ point B = dir(210);
 point C = dir(-30); 
 
 triangle t=triangle(A,B,C);
-drawline(t, linewidth(bp));
+draw(t, linewidth(bp));
 label(t,alignFactor=4);
 
 triangle t_intouch = intouch(t); 

@@ -1,3 +1,5 @@
+[asy]
+
 
 
 import olympiad;
@@ -32,4 +34,11 @@ draw("$p_a$", Pa--P, red+dashed);
 draw("$p_b$", Pb--P, red+dashed); 
 draw("$p_c$", Pc--P, red+dashed); 
 
+markrightangle(P,Pa,B); 
+markrightangle(A,Pb,P); 
+markrightangle(P,Pc,A); 
 
+
+
+
+[/asy]

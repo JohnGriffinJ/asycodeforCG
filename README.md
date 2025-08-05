@@ -8,6 +8,8 @@ https://artofproblemsolving.com/texer
 
 and then wrap the code with "[asy] ... [/asy]" 
 
+See the below example to see what I mean by "wrap". 
+
 
 # Example: 
 
